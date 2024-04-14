@@ -102,7 +102,7 @@ The "'info'" string is the tables name that it will be created in a following st
 
    Edit the Hosts File:
       
-      Add a new line at the end of the hosts file:
+   Add a new line at the end of the hosts file:
       
       `nginx_container_ip_address` devops.test
       
