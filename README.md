@@ -43,7 +43,7 @@ Follow these steps to set up your Laravel development environment using Docker:
 
 3. Create the laravel project:
 
-    ```docker    
+    ```bash    
     docker-compose run --rm composer create-project --prefer-dist laravel/laravel:^8.0 .
      ```
 
@@ -81,7 +81,7 @@ The "'info'" string is the tables name that it will be created in a following st
 
 1. Build the Docker containers using `--build` to make sure you are getting the latest image and start the development environment using the following command:
 
-    ```docker
+    ```bash
     docker-compose up --build server
      ```
 
