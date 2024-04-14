@@ -107,62 +107,61 @@ The "'info'" string is the tables name that it will be created in a following st
       `nginx_container_ip_address` devops.test
       
 
-      Getting teh docker conatainer's IP Address
+   Getting teh docker conatainer's IP Address
              
-         ```docker
-         docker ps
-         ```
+      ```docker
+      docker ps
+      ```
 
-         ```docker
-         docker inspect <container id>
-         ```
+      ```docker
+      docker inspect <container id>
+      ```
          
-      Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
+   Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
-      Example:
-       http://172.17.0.2 devops.test
+   Example:
+   http://172.17.0.2 devops.test
 
-      Save the Hosts File:
-      After adding the line, save the hosts file (File > Save).
+   Save the Hosts File:
+   After adding the line, save the hosts file (File > Save).
 
 - Updating the Hosts File (macOS/Linux)
 
    Open Terminal:
-      Open Terminal from the Applications or Utilities folder (macOS) or use the default terminal (Linux).
+   Open Terminal from the Applications or Utilities folder (macOS) or use the default terminal (Linux).
 
-      Edit the Hosts File:
-      Open the hosts file using a text editor with sudo privileges:
+   Edit the Hosts File:
+   Open the hosts file using a text editor with sudo privileges:
 
-         ```bash
-         sudo nano /etc/hosts
-         ```
-
-      Add an Entry to the Hosts File:
-
-      Add a new line at the end of the hosts file:
-
+      ```bash
+      sudo nano /etc/hosts
       ```
+
+   Add an Entry to the Hosts File:
+
+   Add a new line at the end of the hosts file:
+
+      
       <nginx_container_ip_address> devops.test
+      
+   Getting teh docker conatainer's IP Address
+             
+      ```docker
+      docker ps
       ```
 
-      Getting teh docker conatainer's IP Address
-             
-         ```docker
-         docker ps
-         ```
+      ```docker
+      docker inspect <container id>
+      ```
 
-         ```docker
-         docker inspect <container id>
-         ```
+   Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
-      Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
-
-      Example:
-      172.17.0.2 devops.test
-      Save and Exit:
-         Press Ctrl + X to exit nano.
-         Type Y to confirm changes.
-         Press Enter to save the hosts file.
+   Example:
+   172.17.0.2 devops.test
+   Save and Exit:
+   Press Ctrl + X to exit nano.
+   Type Y to confirm changes.
+   Press Enter to save the hosts file.
 
 
 
@@ -174,28 +173,28 @@ The "'info'" string is the tables name that it will be created in a following st
       ip addr show
       ```
 
-      Look for an interface like eth0 or eth1 (usually named eth0 in WSL) and find the associated IP address. It will typically be in the range of 172.16.x.x, 172.17.x.x, 172.18.x.x, or 172.19.x.x depending on the WSL network configuration.
+   Look for an interface like eth0 or eth1 (usually named eth0 in WSL) and find the associated IP address. It will typically be in the range of 172.16.x.x, 172.17.x.x, 172.18.x.x, or 172.19.x.x depending on the WSL network configuration.
 
-      Locate the ip address of your wsl virtual machine.
+   Locate the ip address of your wsl virtual machine.
 
-      Open Notepad as Administrator:
-      Right-click on the Notepad application in the Start menu.
-      Select "Run as administrator" to open Notepad with administrative privileges.
+   Open Notepad as Administrator:
+   Right-click on the Notepad application in the Start menu.
+   Select "Run as administrator" to open Notepad with administrative privileges.
 
-      Open the Hosts File:
-      In Notepad, go to File > Open.
-      Navigate to C:\Windows\System32\drivers\etc.
-      Change the file type to "All Files" to see the hosts file.
-      Select the hosts file and click "Open".
+   Open the Hosts File:
+   In Notepad, go to File > Open.
+   Navigate to C:\Windows\System32\drivers\etc.
+   Change the file type to "All Files" to see the hosts file.
+   Select the hosts file and click "Open".
 
-      Edit the Hosts File:
-      Add a new line at the end of the hosts file:
+   Edit the Hosts File:
+   Add a new line at the end of the hosts file:
 
-      ```
+      
       <nginx_container_ip_address> devops.test
-      ```
+      
 
-       Getting teh docker conatainer's IP Address
+   Getting teh docker conatainer's IP Address
              
       ```docker
       docker ps
@@ -205,12 +204,12 @@ The "'info'" string is the tables name that it will be created in a following st
       docker inspect <container id>
       ```
 
-      Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
+   Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
-      Example:
-      http://172.17.0.2 devops.test
+   Example:
+   http://172.17.0.2 devops.test
             
-      After adding the line, save the hosts file (File > Save).
+   After adding the line, save the hosts file (File > Save).
 
 3. Once the containers are up and running, you can access your Laravel application in your web browser at http://devops.test:8000. Additionally, the path http://devops.test:8000/thiio/ (**this last slash is very important to get access**) will proxy to an httpd image.
 
