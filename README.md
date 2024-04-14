@@ -107,15 +107,15 @@ The "'info'" string is the tables name that it will be created in a following st
       <nginx_container_ip_address> devops.test
       
 
-   Getting teh docker conatainer's IP Address
+   Getting the docker conatainer's IP Address
              
-      ```bash
-      docker ps
-      ```
+   ```bash
+   docker ps
+   ```
 
-      ```bash
-      docker inspect <container id>
-      ```
+   ```bash
+   docker inspect <container id>
+   ```
          
    Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
@@ -133,9 +133,9 @@ The "'info'" string is the tables name that it will be created in a following st
    Edit the Hosts File:
    Open the hosts file using a text editor with sudo privileges:
 
-      ```bash
-      sudo nano /etc/hosts
-      ```
+   ```bash
+   sudo nano /etc/hosts
+   ```
 
    Add an Entry to the Hosts File:
 
@@ -144,15 +144,15 @@ The "'info'" string is the tables name that it will be created in a following st
       
       <nginx_container_ip_address> devops.test
       
-   Getting teh docker conatainer's IP Address
+   Getting the docker conatainer's IP Address
              
-      ```bash
-      docker ps
-      ```
+   ```bash
+   docker ps
+   ```
 
-      ```bash
-      docker inspect <container id>
-      ```
+   ```bash
+   docker inspect <container id>
+   ```
 
    Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
@@ -169,9 +169,9 @@ The "'info'" string is the tables name that it will be created in a following st
 
    Go to your wsl terminal
 
-      ```bash
-      ip addr show
-      ```
+   ```bash
+   ip addr show
+   ```
 
    Look for an interface like eth0 or eth1 (usually named eth0 in WSL) and find the associated IP address. It will typically be in the range of 172.16.x.x, 172.17.x.x, 172.18.x.x, or 172.19.x.x depending on the WSL network configuration.
 
@@ -196,13 +196,13 @@ The "'info'" string is the tables name that it will be created in a following st
 
    Getting teh docker conatainer's IP Address
              
-      ```bash
-      docker ps
-      ```
+   ```bash
+   docker ps
+   ```
 
-      ```bash
-      docker inspect <container id>
-      ```
+   ```bash
+   docker inspect <container id>
+   ```
 
    Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
