@@ -104,16 +104,16 @@ The "'info'" string is the tables name that it will be created in a following st
       
    Add a new line at the end of the hosts file:
       
-      `nginx_container_ip_address` devops.test
+      <nginx_container_ip_address> devops.test
       
 
    Getting teh docker conatainer's IP Address
              
-      ```docker
+      ```bash
       docker ps
       ```
 
-      ```docker
+      ```bash
       docker inspect <container id>
       ```
          
@@ -146,11 +146,11 @@ The "'info'" string is the tables name that it will be created in a following st
       
    Getting teh docker conatainer's IP Address
              
-      ```docker
+      ```bash
       docker ps
       ```
 
-      ```docker
+      ```bash
       docker inspect <container id>
       ```
 
@@ -196,11 +196,11 @@ The "'info'" string is the tables name that it will be created in a following st
 
    Getting teh docker conatainer's IP Address
              
-      ```docker
+      ```bash
       docker ps
       ```
 
-      ```docker
+      ```bash
       docker inspect <container id>
       ```
 
@@ -220,11 +220,11 @@ The "'info'" string is the tables name that it will be created in a following st
 
 1. Locate the container id and get inside the MySQL container:
 
-   ```docker   
+   ```bash   
    docker ps
    ```
 
-   ```docker
+   ```bash
    docker exec -ti <mysql-container-id> bash
    ```
 
