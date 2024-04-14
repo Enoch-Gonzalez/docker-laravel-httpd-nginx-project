@@ -103,7 +103,7 @@ The "'info'" string is the tables name that it will be created in a following st
    Edit the Hosts File:
       Add a new line at the end of the hosts file:
 
-      <nginx_container_ip_address> devops.test
+      `<nginx_container_ip_address>` devops.test
 
       Getting teh docker conatainer's IP Address
              
@@ -115,7 +115,7 @@ The "'info'" string is the tables name that it will be created in a following st
          docker inspect <container id>
          ```
          
-      Replace <nginx_container_ip_address> with the actual IP address of your Docker container running Nginx.
+      Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
       Example:
        http://172.17.0.2 devops.test
@@ -139,7 +139,7 @@ The "'info'" string is the tables name that it will be created in a following st
 
       Add a new line at the end of the hosts file:
 
-      <nginx_container_ip_address> devops.test
+      `<nginx_container_ip_address>` devops.test
 
       Getting teh docker conatainer's IP Address
              
@@ -151,7 +151,7 @@ The "'info'" string is the tables name that it will be created in a following st
          docker inspect <container id>
          ```
 
-      Replace <nginx_container_ip_address> with the actual IP address of your Docker container running Nginx.
+      Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
       Example:
       172.17.0.2 devops.test
@@ -187,7 +187,7 @@ The "'info'" string is the tables name that it will be created in a following st
       Edit the Hosts File:
       Add a new line at the end of the hosts file:
 
-      <nginx_container_ip_address> devops.test
+      `<nginx_container_ip_address>` devops.test
 
        Getting teh docker conatainer's IP Address
              
@@ -199,7 +199,7 @@ The "'info'" string is the tables name that it will be created in a following st
       docker inspect <container id>
       ```
 
-      Replace <nginx_container_ip_address> with the actual IP address of your Docker container running Nginx.
+      Replace `<nginx_container_ip_address>` with the actual IP address of your Docker container running Nginx.
 
       Example:
       http://172.17.0.2 devops.test
@@ -265,20 +265,6 @@ The "'info'" string is the tables name that it will be created in a following st
    select * from info;
    ```
 
-## Runnin the application:
-
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd <project-directory>
-
-2. Build and run Docker containers:
-    ```bash
-    docker-compose up --build
-
-3. Access the Laravel application: Open your web browser and go to http://devops.test
-
-4. Access the Random HTTP service: Open http://devops.test/thiio in your web browser
 
 ### Notes:
 
