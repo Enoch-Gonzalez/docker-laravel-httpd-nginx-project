@@ -246,7 +246,7 @@ The "'info'" string is the tables name that it will be created in a following st
    use homestead;
    ```
 
-4. Create a table. **This table name must match the string table's name declared in number 5 in the Environment Setup configuration
+4. Create a table. **This table name must match the string table's name declared in number 5 in the Environment Setup configuration**.
 
    ```mysql
    create table info (name varchar(20), lastname varchar(20), age int(2));
