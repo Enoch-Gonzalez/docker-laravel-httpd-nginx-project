@@ -101,9 +101,12 @@ The "'info'" string is the tables name that it will be created in a following st
       Select the hosts file and click "Open".
 
    Edit the Hosts File:
+      
       Add a new line at the end of the hosts file:
 
-      `<nginx_container_ip_address>` devops.test
+      ```
+      <nginx_container_ip_address> devops.test
+      ```
 
       Getting teh docker conatainer's IP Address
              
@@ -139,7 +142,9 @@ The "'info'" string is the tables name that it will be created in a following st
 
       Add a new line at the end of the hosts file:
 
-      `<nginx_container_ip_address>` devops.test
+      ```
+      <nginx_container_ip_address> devops.test
+      ```
 
       Getting teh docker conatainer's IP Address
              
@@ -187,8 +192,10 @@ The "'info'" string is the tables name that it will be created in a following st
       Edit the Hosts File:
       Add a new line at the end of the hosts file:
 
-      `<nginx_container_ip_address>` devops.test
-
+      ```
+      <nginx_container_ip_address> devops.test
+      ```
+      
        Getting teh docker conatainer's IP Address
              
       ```docker
