@@ -41,19 +41,21 @@ Follow these steps to set up your Laravel development environment using Docker:
 
 2. Configure your Laravel application to use the MySQL database. You can do this by modifying your Laravel application's `.env` file with the database credentials specified in the `mysql.env` file. (Data will not persist since there are no volumes).
 
-3. Create the laravel project:
+3. Delete the .gitignore file inside the /src directory.
+
+4. Create the laravel project:
 
     ```bash    
     docker-compose run --rm composer create-project --prefer-dist laravel/laravel:^8.0 .
      ```
 
-4. Open src/.env in your editor and change the configuration lines for the database connection as follows:
+5. Open src/.env in your editor and change the configuration lines for the database connection as follows:
 
 - DB_DATABASE=homestead
 - DB_USERNAME=homestead
 - DB_PASSWORD=secret
 
-5. Open src/routes/web.php and copy this php code:
+6. Open src/routes/web.php and copy this php code:
 
    ```php
       <?php

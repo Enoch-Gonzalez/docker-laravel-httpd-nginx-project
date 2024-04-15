@@ -7,7 +7,7 @@ COPY src .
 #COPY ../scripts/start.sh /usr/local/bin/start.sh
 
 # Make the start.sh script executable
-RUN chmod +x /usr/local/bin/start.sh
+#RUN chmod +x /usr/local/bin/start.sh
  
 RUN docker-php-ext-install pdo pdo_mysql
  
