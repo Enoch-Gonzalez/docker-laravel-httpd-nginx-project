@@ -211,14 +211,13 @@ The "'info'" string is the tables name that it will be created in a following st
             
    After adding the line, save the hosts file (File > Save).
 
-3. Once the containers are up and running, you can access your Laravel application in your web browser at http://devops.test:8000. Additionally, the path http://devops.test:8000/thiio/ (**this last slash is very important to get access**) will proxy to an httpd image.
-
+3. Once the containers are up and running, you can access your Laravel application in your web browser at http://devops.test:8000. 
 
 ## DataBase Configuration
 
 ### Populate de MySQL database
 
-1. Locate the container id and get inside the MySQL container:
+1. Open your terminal and locate the container id and get inside the MySQL container:
 
    ```bash   
    docker ps
@@ -270,6 +269,9 @@ The "'info'" string is the tables name that it will be created in a following st
    select * from info;
    ```
 
+## Run and Verify the application
+
+1. Access your Laravel application in your web browser at http://devops.test:8000. Additionally, access the path http://devops.test:8000/thiio/ (**this last slash is very important to get access**), this will proxy to an httpd image with a Hello World message.
 
 ### Notes:
 
