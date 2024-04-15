@@ -58,7 +58,7 @@ Follow these steps to set up your Laravel development environment using Docker:
 6. Open src/routes/web.php and copy this php code:
 
    ```php
-      <?php
+   <?php
 
    // Import necessary Laravel classes
    use Illuminate\Support\Facades\DB;
