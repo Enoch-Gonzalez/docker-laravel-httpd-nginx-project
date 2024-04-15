@@ -46,11 +46,13 @@ Follow these steps to set up your Laravel development environment using Docker:
 4. Create the laravel project:
 
     ```bash    
-    docker-compose run --rm composer create-project --prefer-dist laravel/laravel:^8.0 .
+    docker-compose run --rm composer create-project --prefer-dist laravel/laravel:^7.0 .
      ```
 
 5. Open src/.env in your editor and change the configuration lines for the database connection as follows:
 
+- APP_URL=http://devops.test
+- DB_HOST=mysql
 - DB_DATABASE=homestead
 - DB_USERNAME=homestead
 - DB_PASSWORD=secret
@@ -217,7 +219,7 @@ The "'info'" string is the tables name that it will be created in a following st
 
 ## DataBase Configuration
 
-### Populate de MySQL database
+### Populate the MySQL database
 
 1. Open your terminal and locate the container id and get inside the MySQL container:
 
